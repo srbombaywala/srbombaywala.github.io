@@ -274,7 +274,7 @@ nav{
 
     }
     .top-container{
-        background: linear-gradient(rgba(89,82,96,1) 0%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(#e5e3f0 0%, rgba(255,255,255,1) 100%);
         flex-direction: column;
         height: auto;
         padding-top: 0rem;
