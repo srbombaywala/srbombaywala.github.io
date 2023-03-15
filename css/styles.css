@@ -1,0 +1,337 @@
+
+:root{
+--dark: #2C2E43;
+--light:#595260;
+--grey: #e5e3f0;
+--yellow: #FFD523;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 3px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: 0.8s all ease-out;
+}
+
+
+.srb{
+    width: 60px;
+    border: 5px solid var(--yellow);
+    border-radius: 50%;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links li{
+    margin: auto 20px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.nav-links a:hover{
+    color: var(--yellow);
+}
+
+.top-container{
+    display: flex;
+    position: relative;
+    padding-top: 7.5rem;
+    font-family: 'Lora', serif;
+    text-align: center;
+    width: 100%;
+    background-color: var(--grey);
+    min-height: 100vh;
+}
+
+.top-container h1{
+    font-size: 2.5rem;
+}
+
+.main{
+    width: 70%;
+    line-height: 2rem;
+    margin-left: 0.5rem;
+}
+
+.designation{
+    font-size: 1.5rem;
+    margin: 3rem auto;
+    width: 40%;
+}
+
+.teacher{
+    width: 30%;
+    height: 30%;
+    margin: auto;
+}
+
+.break{
+    margin: 2rem auto 2rem auto;
+    border: none;
+    border-top: 16px dotted var(--light);
+    width: 25%;
+    
+}
+
+.title{
+    background-color: var(--yellow);
+    /* text-decoration: underline; */
+    margin: 2% 10%;
+    width: fit-content;
+    padding: 0.2rem;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 3px 0px;
+}
+
+.middle-container{
+    /* min-height: calc(100vh); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.education{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20%;
+    margin-bottom: 25px;
+}
+
+.degree{
+    font-size: 150%;
+}
+
+.course{
+    color: var(--light);
+}
+
+.university{
+    color: var(--light);
+}
+
+.break1{
+    margin: 2rem auto 2rem auto;
+    border: none;
+    border-top: 16px dotted var(--light);
+    width: 25%;
+}
+
+.skill-logo{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.skill-description{
+    display: flex;
+    margin: 0 20% 2% 20%;
+}
+
+.skill-right{
+    line-height: 2rem;
+    margin-left: 20px;
+}
+
+.skill-left{
+    line-height: 2rem;
+    margin-right: 20px;
+}
+
+.certi-right{
+    line-height: 2rem;
+    margin-left: 20px;
+}
+
+.certi-title a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 150%;
+    color: var(--dark);
+}
+
+.certi-left{
+    line-height: 2rem;
+    margin-right: 20px;
+}
+
+
+#Contact{
+    background-color: var(--dark);
+    padding-top: 1rem;
+}
+
+.address-items{
+    display: flex;
+    margin: 0 20% 2% 20%;
+    justify-content: space-around;
+}
+
+.contact-item{
+    text-align: center;
+}
+
+.contact-item img{
+    width: 32px;
+    background-color: var(--yellow);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.contact-title{
+    color: var(--yellow);
+}
+
+.contact-info{
+    color: var(--grey);
+    font-size: 0.8rem;
+}
+
+.footer{
+    background-color: var(--light);
+    text-align: center;
+}
+
+.footer-text{
+    color: var(--grey);
+    font-size: 0.7rem;
+}
+
+.active a{
+    color: var(--yellow);
+}
+.hamburger{
+    display: none;
+}
+
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 840px) {
+    .hamburger {
+        display: inline-block;
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        cursor: pointer;
+        opacity: 0.3;
+    }
+
+    .hamburger .closeIcon{
+        display: none;
+    }
+
+    .showMenu {
+        visibility: visible;
+        transition: linear 1s ;
+    }
+
+    .nav-links{
+        text-align: center;
+        flex-direction: column;
+        margin-top: 1rem;
+        gap: 5vh;
+    }
+    nav{
+        visibility: hidden;
+        opacity: 0.9;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        transition: none;
+
+    }
+    .top-container{
+        flex-direction: column;
+        height: auto;
+        padding-top: 0rem;
+        min-height:max-content;
+    }
+
+    .main{
+        width: 100%;
+        margin: 0rem auto;
+        order: 2;
+        line-height: 3vw;
+    }
+    .main p{
+        font-size: 1.8vw;
+        padding: 0 1rem;
+    }
+    .teacher{
+        width: 30%;
+        height: 30%;
+        margin: 1rem auto;
+    }
+    .top-container h1{
+        font-size: 5vw;
+    }
+    .designation{
+        font-size: 2vw;
+        margin: 1vw auto 1rem;
+        width: 100%;
+        font-weight: bold;
+    }
+    .middle-container{
+        font-size: 90%;
+    }
+    .title{
+        font-size: 3vw;
+    }
+    .education{
+        margin: 0 10%;
+        font-size: 1.8vw;
+    }
+    .skill-description{
+        text-align: justify;
+    }
+    .skill-description p{
+        font-size: 1.8vw;
+    }
+    .skill-right, .skill-left, .certi-left, .certi-right{
+        line-height: 3vw;
+    }
+    .skill-logo{
+        width: 15vw;
+        height: 15vw;
+    }
+    .contact-info{
+        color: var(--grey);
+        font-size: 1.3vw;
+    }
+    .contact-title{
+        font-size: 1.5vw;
+    }
+}
