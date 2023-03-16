@@ -276,7 +276,7 @@ nav{
     .top-container{
         background: linear-gradient(#e5e3f0 0%, rgba(255,255,255,1) 100%);
         flex-direction: column;
-        height: auto;
+        height: 100vh;
         padding-top: 0rem;
         min-height:max-content;
     }
@@ -285,14 +285,14 @@ nav{
         width: 100%;
         margin: 0rem auto;
         order: 2;
-        line-height: 3vw;
+        line-height: 2vh;
     }
     .main p{
-        font-size: 1.8vw;
+        font-size: 1.5vh;
         padding: 0 1rem;
     }
     .teacher{
-        width: 30%;
+        width: 16vh;
         height: 30%;
         margin: 1rem auto;
     }
@@ -309,7 +309,7 @@ nav{
         font-size: 90%;
     }
     .title{
-        font-size: 3vw;
+        font-size: 1.5vh;
     }
     .education{
         margin: 0 10%;
@@ -317,12 +317,13 @@ nav{
     }
     .skill-description{
         text-align: justify;
+        margin: 0 10% 2% 10%;
     }
     .skill-description p{
-        font-size: 1.8vw;
+        font-size: 1.1vh;
     }
     .skill-right, .skill-left, .certi-left, .certi-right{
-        line-height: 3vw;
+        line-height: 2vh;
     }
     .skill-logo{
         width: 15vw;
@@ -334,5 +335,8 @@ nav{
     }
     .contact-title{
         font-size: 1.5vw;
+    }
+    .footer-text{
+        font-size: 0.5rem;
     }
 }
